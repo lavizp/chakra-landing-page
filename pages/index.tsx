@@ -7,6 +7,7 @@ import HowToOrderSection from '@/components/howToOrderSection'
 import PopularFood from '@/components/popularFood'
 import PopularCuisines from '@/components/popularCuisines'
 import NearbyRestaurants from '@/components/nearbyRestaurants'
+import WhySection from '@/components/whySection'
 import Footer from '@/components/footer'
 export default function Home() {
   return (
@@ -62,6 +63,7 @@ export default function Home() {
           <NearbyRestaurants/>
           <NearbyRestaurants/>
         </Flex>
+        <WhySection/>
         <Footer/>
       </Box>
     </>
