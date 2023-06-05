@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { Box } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import Navbar from '@/components/navbar'
 import HeroSection from '@/components/heroSection'
 import AdvertSection from '@/components/advertSection'
-
+import HowToOrderSection from '@/components/howToOrderSection'
+import PopularFood from '@/components/popularFood'
+import PopularCuisines from '@/components/popularCuisines'
+import NearbyRestaurants from '@/components/nearbyRestaurants'
+import Footer from '@/components/footer'
 export default function Home() {
   return (
     <>
@@ -19,6 +21,48 @@ export default function Home() {
         <Navbar/>
         <HeroSection/>
         <AdvertSection/>
+        <HowToOrderSection/>
+        <Text fontSize="3xl" px={10} fontWeight="bold" mb={5}>Popular Food in Your Area</Text>
+        <Flex wrap="wrap" px={10} gap={5} justifyContent="space-between" mb={5}>
+          <PopularFood/>
+          <PopularFood/>
+          <PopularFood/>
+          <PopularFood/>
+          <PopularFood/>
+          <PopularFood/>
+          <PopularFood/>
+          <PopularFood/>
+        </Flex>
+        <Text fontSize="3xl" px={10} fontWeight="bold" mb={5}>Popular Cuisines</Text>
+        <Flex wrap="wrap" px={10} gap={5} justifyContent="space-between" mb={10}>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>          
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+          <PopularCuisines/>
+        </Flex>
+        <Text fontSize="3xl" px={10} fontWeight="bold" mb={5}>Nearby Restaurants</Text>
+        <Flex wrap="wrap" px={10} gap={5} justifyContent="space-between" mb={5}>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+          <NearbyRestaurants/>
+        </Flex>
+        <Footer/>
       </Box>
     </>
   )
