@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 function Footer() {
   return (
-    <Flex justifyContent="space-between" px={10} mt={100} mb={10}>
-        <Flex direction="column" w="20%" gap={5}>
+    <Flex justifyContent="space-between" px={10} mt={100} mb={10} flexWrap="wrap" gap={10}>
+        <Flex direction="column" w={40} gap={5}>
             <Flex justifyContent="center" alignItems="center" gap={2}>
 
             <Image src="/logo.png" alt="logo" width={50} height={50}/>

@@ -3,7 +3,7 @@ import React from 'react'
 
 function AdvertSection() {
   return (
-    <Flex bg="black" rounded="md" mx={10} p={10} mt={20} justifyContent="space-between" alignItems="center">
+    <Flex bg="black" rounded="md" mx={10} p={10} mt={20} justifyContent="space-between" alignItems="center" direction={['column', 'column', 'row', 'row']}>
         <Flex direction="column" gap={4}>
             <Text color="white" fontSize="4xl" as="b">
                 Get Upto <Text as="span" color="red">50%</Text> Offer On Festival Season !
@@ -17,7 +17,7 @@ function AdvertSection() {
 
         </Flex>
 
-            <Box position="relative" width="220px" height="220px">
+            <Box position="relative" width="220px" height="220px" mt={[10,10,0,0]}>
                 <Image src="/burger1.png" alt="Background" width="100%" height="100%" />
                 <Box position="absolute" bottom={0} left={-10}>
                   <Image src="/burger2.png" alt="Overlay" width="150px" height="150px" />

@@ -24,7 +24,7 @@ export default function Home() {
         <AdvertSection/>
         <HowToOrderSection/>
         <Text fontSize="3xl" px={10} fontWeight="bold" mb={5}>Popular Food in Your Area</Text>
-        <Flex wrap="wrap" px={10} gap={5} justifyContent="space-between" mb={5}>
+        <Flex wrap="wrap" px={10} gap={5} justifyContent={["center","space-between"]} mb={5}>
           <PopularFood/>
           <PopularFood/>
           <PopularFood/>
@@ -35,7 +35,7 @@ export default function Home() {
           <PopularFood/>
         </Flex>
         <Text fontSize="3xl" px={10} fontWeight="bold" mb={5}>Popular Cuisines</Text>
-        <Flex wrap="wrap" px={10} gap={5} justifyContent="space-between" mb={10}>
+        <Flex wrap="wrap" px={10} gap={5} justifyContent={["center", "space-between"]} mb={10}>
           <PopularCuisines/>
           <PopularCuisines/>
           <PopularCuisines/>
@@ -53,7 +53,7 @@ export default function Home() {
           <PopularCuisines/>
         </Flex>
         <Text fontSize="3xl" px={10} fontWeight="bold" mb={5}>Nearby Restaurants</Text>
-        <Flex wrap="wrap" px={10} gap={5} justifyContent="space-between" mb={5}>
+        <Flex wrap="wrap" px={10} gap={5} justifyContent={["center", "space-between"]} mb={5}>
           <NearbyRestaurants/>
           <NearbyRestaurants/>
           <NearbyRestaurants/>

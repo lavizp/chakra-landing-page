@@ -6,7 +6,7 @@ import { Image } from '@chakra-ui/next-js'
 function HeroImage({image, text}: {image: string, text: string}){
     return(
 
-        <Flex width={250} height={250} direction="column" justifyContent="center" alignItems="center" gap={5}>
+        <Flex width={[100,150,150,170]} height={150} direction="column" justifyContent="center" alignItems="center" gap={5}>
             <Image src={image}alt="image" width={150} height={150}/>  
             <Text>{text}</Text>
     </Flex>
@@ -15,7 +15,7 @@ function HeroImage({image, text}: {image: string, text: string}){
 
 function HeroSection() {
   return (
-    <Flex px={10} gap={20} wrap="wrap" justifyContent="space-between">
+    <Flex px={10} gap={20} wrap="wrap" justifyContent={["center","center","center","space-between"]}>
         <Flex direction="column" justifyContent="space-between" w={[500, 400 , 500]}>
             <Box>
                 <Text fontSize="5xl" as='b'>Giving Your <Text as="span" color="red">Hunger</Text> A New Option</Text>
@@ -26,12 +26,12 @@ function HeroSection() {
                 <SearchIcon color="grey"/>
             </Flex>
         </Flex>
-        <HStack w={[350, 200, 600]} h={300}>
+        <Flex direction={['column', 'column', 'row', 'row']} gap={[10,10,5,2]}>
             <HeroImage image='/ridersvg.png' text="Delivery"/>
             <HeroImage image='/takeawaysvg.png' text="Takwaway"/>
             <HeroImage image='/dinnersvg.png' text="Dining"/>
 
-        </HStack>
+        </Flex>
     </Flex>
   )
 }
